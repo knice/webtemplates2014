@@ -33,12 +33,13 @@
       <!--start header-->
       <div id="content">
 
-
         <header role="banner" class="site-header">
 
           <div class="row page-top">
 
             <ul id="topNav" class="global-nav">
+              <li><a href="http://my.ucsc.edu" title="Go to the MyUCSC portal">University Home</a>
+              </li>
               <li><a href="http://my.ucsc.edu" title="Go to the MyUCSC portal">MyUCSC</a>
               </li>
               <li><a href="tools/people.html" title="Find People - UCSC People Search">People</a>
@@ -65,40 +66,38 @@
 
           </div>
 
+          <div class="row logo">
+            <h1>
+      <a href="http://example.com/">History</a>
+    </h1>
+            <a href="index.html" id="logo" title="Return the UCSC home page">UC Santa Cruz home</a>
 
-          <div class="row">
-
-            <h1 class="site-title">
-        <a href="index.html" title="History Department Home">History</a>
-      </h1>
-            <a href="http://www.ucsc.edu/index.html" class="ucsc-logo">UC Santa Cruz home</a>
             <a href="#mainNav" class="menu-toggle">MENU <span><i class="icon-arrow-down-md"></i></span></a>
-
           </div>
 
 
           <div class="row">
 
-            <ul id="mainNav" class="site-nav">
-              <li class="first"><a href="about/index.html">About</a>
+            <ul id="mainNav">
+              <li class="first"><a href="../about/index.html">About</a>
               </li>
-              <li><a href="undergraduate/index.html">Undergraduate</a> 
+              <li><a href="index.html">Undergraduate</a> 
                 <ul>
-                  <li><a href="undergraduate/history-major/index.html" title="History Major">History Major</a>
+                  <li><a href="history-major/index.html" title="History Major">History Major</a>
                   </li>
-                  <li><a href="undergraduate/history-minor/index.html" title="History Minor">History Minor</a>
+                  <li><a href="history-minor/index.html" title="History Minor">History Minor</a>
                   </li>
-                  <li><a href="undergraduate/undergraduate-advising/index.html" title="Advising">Advising</a>
+                  <li><a href="undergraduate-advising/index.html" title="Advising">Advising</a>
                   </li>
                 </ul>
               </li>
-              <li><a href="graduate/index.html">Graduate</a>
+              <li><a href="../graduate/index.html">Graduate</a>
               </li>
-              <li><a href="faculty/profiles/index.php">Faculty</a>
+              <li><a href="../faculty/profiles/index.php">Faculty</a>
               </li>
-              <li><a href="courses/class-schedule-view.php">Courses</a>
+              <li><a href="../courses/class-schedule-view.php">Courses</a>
               </li>
-              <li><a href="news-events/news/index.html">News &amp; Events</a>
+              <li><a href="../news-events/news/index.html">News &amp; Events</a>
               </li>
             </ul>
 
@@ -106,25 +105,49 @@
 
         </header>
 
+        <div class="row">
+
+          <!-- =================== Carousel ==================== -->
+          <div id="slides" class="owl-carousel">
+
+            <div class="slide">
+              <img alt="Mexico - Puebla dancing children" src="http://history.ucsc.edu/images/mexico-puebla-dancing-children_780w.jpg">
+              <div class="slide-body">
+                <h1>Puebla dancing children</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste sed doloribus debitis incidunt? <a href="#">Link to more</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img alt="Notredame" src="http://history.ucsc.edu/images/notredame_hershatter_780w.jpg">
+              <div class="slide-body left">
+                <h1>Notre Dame</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste sed doloribus debitis incidunt? <a href="#">Link to more</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img alt="Naxos Street" src="http://history.ucsc.edu/images/naxos_street_780w.jpg">
+              <div class="slide-body right">
+                <h1>Naxos Street</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste sed doloribus debitis incidunt? <a href="#">Link to more</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img alt="Naxos Street" src="http://history.ucsc.edu/images/notredame_hershatter_780w.jpg">
+            </div>
 
 
 
 
-
-        <div id="carousel">
-          <div id="billboard">
-            <a href="">
-              <img alt="Mexico - Puebla dancing children" height="250" src="http://history.ucsc.edu/images/mexico-puebla-dancing-children_780w.jpg" title="Mexico - Puebla dancing children" width="780">
-            </a>
-            <a href="">
-              <img alt="Notredame" height="250" src="http://history.ucsc.edu/images/notredame_hershatter_780w.jpg" title="Notredame" width="780">
-            </a>
-            <a href="">
-              <img alt="Naxos Street" height="250" src="http://history.ucsc.edu/images/naxos_street_780w.jpg" title="Naxos Street" width="780">
-            </a>
           </div>
+          <!-- =================== END Carousel ==================== -->
+
         </div>
-        <div id="bbnav"></div>
 
         <div class="three separate dark">
           <div class="wrap">
@@ -139,6 +162,7 @@
               </div>
             </div>
           </div>
+
           <div class="wrap">
             <div id="news">
               <h3>History&#160;<span>News</span></h3>
@@ -147,12 +171,16 @@
                   <li>
                     <a href="news-events/news/ohara-hanger-prize.html">
                       <img alt="Matt O&apos;Hara" class="fltlft" height="80" src="http://history.ucsc.edu/news-events/images/ohara80w.jpg">
-                    </a><span class="date">December 17, 2013</span><a href="news-events/news/ohara-hanger-prize.html">Professor Matt O'Hara Wins Article Prize</a>
+                    </a>
+                    <span class="date">December 17, 2013</span>
+                    <a href="news-events/news/ohara-hanger-prize.html">Professor Matt O'Hara Wins Article Prize</a>
                   </li>
                   <li>
                     <a href="http://news.ucsc.edu/2013/11/delgado-history-awards.html">
                       <img alt="ucsc assistant professor of history Grace Pe&#241;a Delgado" class="fltlft" height="80" src="http://news.ucsc.edu/2013/11/images/grace-delgado-thumb.jpg">
-                    </a><span class="date">November 18, 2013</span><a href="http://news.ucsc.edu/2013/11/delgado-history-awards.html">Grace Delgado wins two Western History Association awards </a>
+                    </a>
+                    <span class="date">November 18, 2013</span>
+                    <a href="http://news.ucsc.edu/2013/11/delgado-history-awards.html">Grace Delgado wins two Western History Association awards</a>
                   </li>
                   <li><em><a href="news-events/news/index.html" title="More">More...</a></em>
                   </li>
@@ -221,13 +249,35 @@
         </div>
       </div>
       <!-- /content -->
-
-      <div class="sleed" style="background-color:#ece9d8">&#160;</div>
-
     </div>
     <!-- /container -->
   </div>
   <!-- /wrap -->
+
+  <!-- PAGE BOTTOM SCRIPTS -->
+  <script src="lib/respond/dest/respond.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/responsive.js"></script>
+
+  <script src="lib/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var owl = $("#slides");
+      owl.owlCarousel({
+        autoPlay : 5000,
+        stopOnHover : true,
+        navigation:true,
+        paginationSpeed : 1000,
+        goToFirstSpeed : 2000,
+        singleItem : true,
+        autoHeight : true,
+        lazyLoad : true,
+        transitionStyle:"fade"
+      });
+      
+    });
+  </script>
+
 </body>
 
 </html>
