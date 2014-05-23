@@ -32,92 +32,7 @@
 
         <header role="banner" class="site-header">
 
-          <div class="row page-top">
-
-            <ul id="topNav" class="global-nav">
-              <!-- <li><a href="http://my.ucsc.edu" title="Go to the MyUCSC portal">University Home</a></li> -->
-              <li><a href="http://my.ucsc.edu" title="Go to the MyUCSC portal">MyUCSC</a>
-              </li>
-              <li><a href="tools/people.html" title="Find People - UCSC People Search">People</a>
-              </li>
-              <li><a href="tools/calendars.html" title="View UCSC events, academic, and administrative calendars">Calendars</a>
-              </li>
-              <li><a href="tools/azindex.html" title="A to Z index of important links">A-Z Index</a>
-              </li>
-            </ul>
-
-            <div class="search">
-              <!-- Google Custom Search -->
-              <div>
-                <form action="http://www.ucsc.edu/search" id="cse-search-box">
-                  <input name="cx" type="hidden" value="012090462228956765947:d0ywvq7bxee">
-                  <input name="cof" type="hidden" value="FORID:9">
-                  <input name="ie" type="hidden" value="UTF-8">
-                  <label class="hide" for="q">Search</label>
-                  <input class="query" id="q" placeholder="Search UCSC" name="q" type="text">
-                </form>
-              </div>
-              <!-- end GCS -->
-            </div>
-
-          </div>
-
-          <div class="row logo">
-
-            <h1><a href="http://example.com/">Humanities</a></h1>
-            <a href="http://www.ucsc.edu" id="logo">UC Santa Cruz home</a> 
-            <a href="#mainNav" class="menu-toggle">MENU <span><i class="icon-arrow-down-md"></i></span></a>
-
-          </div>
-
-
-          <div class="row">
-
-            <ul class="hasqsg" id="mainNav">
-              <li class="first"><a href="about/index.html">About</a>
-              </li>
-              <li><a href="academics/index.html">Academics</a>
-              </li>
-              <li><a href="http://ihr.ucsc.edu/" target="_blank">Research</a>
-              </li>
-              <li><a href="news-events/news/index.html">News &amp; Events</a>
-              </li>
-              <li><a href="about/giving/index.html">Support Us</a>
-              </li>
-              <li class="last qsg">
-                <span>Quick Start Links&#160;<img alt="more items when you click" src="http://static.ucsc.edu/images/drop_down_button.gif"></span> 
-                <ul>
-                  <li><a href="http://www.ucsc.edu/tools/people.html">Find People</a>
-                  </li>
-                  <li><a href="about/contact/index.html">Maps &amp; Directions</a>
-                  </li>
-                  <li><a href="about/giving/index.html">Give</a>
-                  </li>
-                  <li><a href="http://ihr.ucsc.edu">Research</a>
-                  </li>
-                  <li><a href="academics/awards-fellowships/index.html">Awards Grants &amp; Fellowships</a>
-                  </li>
-                  <li><a href="about/administration/index.html">Faculty &amp; Staff Resources</a>
-                  </li>
-                  <li><a href="about/administration/academic-human-resources/index.html">Academic HR</a>
-                  </li>
-                  <li><a href="http://apo.ucsc.edu/academic_workshops_and_training/DivData%20Manual/DivDataManual.html">BioBibNet</a>
-                  </li>
-                  <li><a href="about/administration/computing/index.html">Computing Services</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
-          </div>
-
-
-
-
-
-
-
-
+          @@include('./app/html-partials/global-header.html') @@include('./app/html-partials/header-div.html')
 
         </header>
 
@@ -334,29 +249,7 @@
   <!-- /wrap -->
 
 
-  <!-- PAGE BOTTOM SCRIPTS -->
-  <script src="lib/respond/dest/respond.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/responsive.js"></script>
-
-  <script src="lib/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      var owl = $("#slides");
-      owl.owlCarousel({
-        autoPlay : 5000,
-        stopOnHover : true,
-        navigation:true,
-        paginationSpeed : 1000,
-        goToFirstSpeed : 2000,
-        singleItem : true,
-        autoHeight : true,
-        lazyLoad : true,
-        transitionStyle:"fade"
-      });
-      
-    });
-  </script>
+  @@include('./app/html-partials/footer-scripts-global.html') @@include('./app/html-partials/footer-scripts-carousel.html')
 
 </body>
 
