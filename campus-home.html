@@ -19,12 +19,9 @@
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
   <link href="css/ucsc.css" rel="stylesheet" type="text/css">
-  <link href="css/print.css" rel="stylesheet" media="print">
 
   <script src="lib/modernizr/modernizr.js" type="text/javascript"></script>
-  <script src="lib/jquery/dist/jquery.js" type="text/javascript" async></script>
-  <script src="js/analytics.js" type="text/javascript" async></script>
-  <script src="js/imagecache.js" type="text/javascript" async></script>
+
 
 </head>
 
@@ -73,10 +70,10 @@
 
           <div class="row logo">
             <h1><a href="index.html" id="logo" title="Return the UCSC home page">UC Santa Cruz home</a></h1>
-            <a href="#mainNav" class="menu-toggle">MENU <span><i class="icon-arrow-down-md"></i></span></a>
+            <a href="#mainNav" class="menu-toggle">Menu <span><i class="icon-arrow-down-md"></i></span></a>
           </div>
 
-          <div class="row">
+          <div class="row main-navigation">
 
             <ul id="mainNav">
               <li class="first hov"><a href="about/index.html">About</a>
@@ -166,7 +163,6 @@
 
           <!-- =================== END Carousel ==================== -->
         </div>
-
 
 
 
@@ -411,14 +407,13 @@
           <div class="row" id="page_bottom">
             <p><a href="http://its.ucsc.edu/terms/">Privacy Policy and Terms of Use</a>
             </p>
-            <p><b>Page last built:</b> May 23, 2014 - 09:20:56</p>
+            <p><b>Page last built:</b> May 29, 2014 - 15:21:44</p>
           </div>
 
         </footer>
 
       </div>
       <!-- /content-->
-
     </div>
     <!-- /container -->
   </div>
@@ -426,11 +421,13 @@
 
 
   <!-- PAGE BOTTOM SCRIPTS -->
+  <script src="lib/jquery/dist/jquery.js"></script>
+  <script src="lib/respond/dest/respond.min.js" async></script>
+  <script src="js/responsive.js" async></script>
+  <script src="js/analytics.js" type="text/javascript" async></script>
+  <script src="js/imagecache.js" type="text/javascript" async></script>
+  <script src="js/main.js" async></script>
 
-  <!-- PAGE BOTTOM SCRIPTS -->
-  <script src="lib/respond/dest/respond.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/responsive.js"></script>
 
   <script src="lib/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
   <script>
@@ -450,6 +447,7 @@
       
     });
   </script>
+
 
 </body>
 
