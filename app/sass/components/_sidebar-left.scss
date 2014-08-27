@@ -126,3 +126,36 @@
   }
    
 }
+// Give Button on news left
+a.give-button, a.give-button:active {
+  display: block;
+  max-width: 10em;
+  height: 2.35em;
+  background-color:#d31b5e; /*$campaign-red is not red*/
+  padding: .3em .3em .3em .5em;
+  border-radius: $border-radius-base;
+  -webkit-border-radius: $border-radius-base;
+  -moz-border-radius: $border-radius-base;
+  font-size: $font-size-h4;
+  text-decoration: none;
+  line-height: 1.75em;
+  color: #FFF;
+}
+a.give-button:hover {
+  background-color: $campaign-blue;
+  color: $gold-light;
+}
+.give-thumb {
+  display: block;
+  width: 1.75em;
+  height: 1.75em;
+  padding: 5px 5px 5px 0;
+  background:$gold-light url("../images/give-thumb/thumb_left.svg") no-repeat 0 .2em;
+  background-size: 1.4em 1.4em;
+  border-radius: 10em;
+  -webkit-radius: 10em;
+  -moz-radius: 10em;
+  margin-right: 10px;
+  float: left;
+  @include clearfix;
+}
