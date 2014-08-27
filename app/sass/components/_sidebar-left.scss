@@ -156,6 +156,8 @@ a.give-button:hover {
   -webkit-radius: 10em;
   -moz-radius: 10em;
   margin-right: 10px;
+  text-overflow: hidden;
+  text-indent: -9000px;
   float: left;
   @include clearfix;
 }
