@@ -28,6 +28,8 @@
 
 <body class="www landing homeEnv">
 
+
+
   <!-- Do not show banner -->
 
   <div id="wrap">
@@ -59,7 +61,7 @@
                   <input name="cof" type="hidden" value="FORID:9">
                   <input name="ie" type="hidden" value="UTF-8">
                   <label class="hide" for="q">Search</label>
-                  <input class="query" id="q" placeholder="Search UCSC" name="q" type="text">
+                  <input class="query" id="search-site" name="q" type="search" autosave="1q84" results="5" placeholder="Search this site...">
                 </form>
               </div>
               <!-- end GCS -->
@@ -68,10 +70,20 @@
           </div>
 
 
+
+
+
+
+
           <div class="row names">
+
             <div class="campus-name">
-              <h1><a href="index.html" id="logo" title="Return the UCSC home page">UC Santa Cruz home</a></h1>
-              <a href="#mainNav" class="menu-toggle">Menu <span><i class="icon-arrow-down-md"></i></span></a>
+              <h1>
+    <a class="campus-logo" href="index.html" id="logo" title="Return the UCSC home page">UC Santa Cruz home</a>
+  </h1>
+
+              <a class="mobile-menu" href="#mainNav">Menu</a>
+
             </div>
 
           </div>
@@ -115,9 +127,11 @@
 
 
 
+
           <div class="row breadcrumbs">
             <p><a href="../index.html">Home</a> / <a href="http://example.com/">Directory</a> / This page</p>
           </div>
+
 
 
         </div>
@@ -128,11 +142,11 @@
 
 
 
-          <div class="row title" id="titles">
-            <h1>About UCSC</h1>
-            <p>About: This is a place like no other -- a place that inspires, a place that evokes passion and imagination -- all with a view to a limitless horizon.</p>
-            <img alt="About UCSC - About: This is a place like no other -- a place that inspires, a place that evokes passion and imagination -- all with a view to a limitless horizon."
-            src="http://www.ucsc.edu/about/images/about_banner.png">
+          <div class="row tagline" id="titles">
+            <div class="title-group">
+              <h1>About</h1>
+              <p>This is a place like no other -- a place that inspires, a place that evokes passion and imagination -- all with a view to a limitless horizon.</p>
+            </div>
           </div>
 
           <div class="row five combined light">
@@ -173,26 +187,24 @@
             </div>
           </div>
 
-          <div class="row three combined light">
 
-
-
-
+          <div class="row">
 
             <h3>University <span>News</span></h3>
-            <div id="news" class="module-body list">
-              <ul>
+
+            <div class="content-box" id="landingNews">
+              <ul class="archive-list horizontal list">
 
 
 
 
 
                 <li>
-                  <a href="http://news.ucsc.edu/2014/01/mickey-hart-lieberman.html">
-                    <span class="thumbnail"><img alt="" class="fltlft" height="72px" src="http://news.ucsc.edu/2014/01/images/mickey-thumb5032.jpg"></span>
-                    <span class="date">January 27, 2014</span>
-                    <span class="headline">Grateful Dead's Mickey Hart pays tribute to late UCSC professor</span>
+                  <a href="http://news.ucsc.edu/2014/08/fukunaga-emmy-win.html">
+                    <img alt="Cary Joji Fukunaga" class="fltlft" height="72px" src="http://news.ucsc.edu/2014/08/images/Fukunaga-thumb1.jpg?t=0">
                   </a>
+                  <span class="date">August 26, 2014</span>
+                  <a href="http://news.ucsc.edu/2014/08/fukunaga-emmy-win.html">UC Santa Cruz alum wins Emmy for HBO drama ‘True Detective’</a>
                 </li>
 
 
@@ -202,11 +214,11 @@
 
 
                 <li>
-                  <a href="http://news.ucsc.edu/2014/01/third-laser-talk.html">
-                    <span class="thumbnail"><img alt="LASER poster-image of moray eel by Rita Mehta " class="fltlft" height="72px" src="http://news.ucsc.edu/2014/01/images/leornard-thumb.jpg"></span>
-                    <span class="date">January 21, 2014</span>
-                    <span class="headline">Institute of Arts and Sciences third LASER talk on Jan. 28</span>
+                  <a href="http://news.ucsc.edu/2014/08/arwu-rankings.html">
+                    <img alt="" class="fltlft" height="72px" src="http://news.ucsc.edu/2014/08/images/arwu-80.png?t=0">
                   </a>
+                  <span class="date">August 19, 2014</span>
+                  <a href="http://news.ucsc.edu/2014/08/arwu-rankings.html">UC Santa Cruz moves up in Shanghai ranking of world universities </a>
                 </li>
 
 
@@ -216,22 +228,20 @@
 
 
                 <li>
-                  <a href="http://news.ucsc.edu/2014/01/music-grammy-winant.html">
-                    <span class="thumbnail"><img alt="UCSC music lecturer and percussionist William Winant" class="fltlft" height="72px" src="http://news.ucsc.edu/2014/01/images/Winant-thumb.jpg"></span>
-                    <span class="date">January 16, 2014</span>
-                    <span class="headline">UCSC music lecturer nominated for a Grammy Award</span>
+                  <a href="http://news.ucsc.edu/2014/08/dickens-endowment-drive.html">
+                    <img alt="john jordan " class="fltlft" height="72px" src="http://news.ucsc.edu/2014/08/images/dickens-thumb-john.jpg?t=0">
                   </a>
+                  <span class="date">August 5, 2014</span>
+                  <a href="http://news.ucsc.edu/2014/08/dickens-endowment-drive.html">Dickens Project at UC Santa Cruz announces endowment drive</a>
                 </li>
 
 
 
               </ul>
             </div>
-
-
           </div>
 
-          <div class="row three dark combined">
+          <div class="row">
             <h3>See <span>Also</span></h3>
             <div id="seeAlso">
               <ul>
@@ -241,13 +251,9 @@
                 </li>
                 <li><a href="campus-overview.html">History &amp; Overview</a>
                 </li>
-                <li><a href="http://studentservices.ucsc.edu">Student Services</a>
-                </li>
                 <li><a href="principles-community.html">Principles of Community</a>
                 </li>
                 <li><a href="http://www1.ucsc.edu/about/employment.asp">Employment at UCSC</a>
-                </li>
-                <li><a href="http://www1.ucsc.edu/about/gallery/">Photo Gallery</a>
                 </li>
                 <li><a href="crime-stats/index.html">Crime Awareness &amp; Campus Security</a>
                 </li>
@@ -262,8 +268,6 @@
                 <li><a href="http://www.ucsc.edu/about/files/world-of-difference.pdf">'People Making a World of Difference'</a>
                 </li>
                 <li><a href="http://planning.ucsc.edu/portrait/">'Campus Portrait' Document</a>
-                </li>
-                <li><a href="http://help.ucsc.edu">Help and Support</a>
                 </li>
               </ul>
             </div>
@@ -345,23 +349,27 @@
 
 
         <div class="row" id="footer" role="footer">
-          <p class="links"><a href="about/contact.html">Contact</a>
+          <p class="links">
+            <a href="about/contact.html">Feedback</a>
           </p>
-          <p class="links"><a href="department-use-only.html">Internal</a>
+          <p class="links">
+            <a href="about/contact.html">Contact</a>
           </p>
-          <p class="links"><a href="feedback.php" title="Feedback">Feedback</a>
+          <p class="links">
+            <a href="about/contact.html">Information</a>
           </p>
+
           <p class="address home">UC Santa Cruz, 1156 High Street, Santa Cruz, Ca 95064
-            <br>©2012 Regents of the University of California. All Rights Reserved.</p>
+            <br>©2014 Regents of the University of California. All Rights Reserved.</p>
         </div>
 
-        <div class="row" id="page_bottom">
+        <div class="row legal">
           <p><a href="http://its.ucsc.edu/terms/">Privacy Policy and Terms of Use</a>
           </p>
-          <p><b>Page last built:</b> August 10, 2014 - 18:47:18</p>
+          <p><b>Page last built:</b> August 30, 2014 - 14:57:48</p>
         </div>
 
-        </footer>
+
 
       </div>
       <!-- /content-->
@@ -374,10 +382,10 @@
   <!-- PAGE BOTTOM SCRIPTS -->
   <script src="lib/jquery/dist/jquery.js"></script>
   <script src="lib/respond/dest/respond.min.js" async></script>
-  <script src="js/responsive.js" async></script>
-  <script src="js/analytics.js" type="text/javascript" async></script>
-  <script src="js/imagecache.js" type="text/javascript" async></script>
-  <script src="js/main.js" async></script>
+  <script src="js/responsive.js"></script>
+  <script src="js/analytics.js" type="text/javascript"></script>
+  <script src="js/imagecache.js" type="text/javascript"></script>
+  <script src="js/main.js"></script>
 
 
 
