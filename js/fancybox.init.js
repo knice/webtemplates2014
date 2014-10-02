@@ -1,1 +1,1 @@
-jQuery(document).ready(function(){var e=jQuery("#slides");e.owlCarousel({autoPlay:5e3,stopOnHover:!0,navigation:!0,paginationSpeed:1e3,goToFirstSpeed:2e3,singleItem:!0,autoHeight:!0,lazyLoad:!0,transitionStyle:"fade"})});
+jQuery(document).ready(function(){jQuery("#video a.fb").each(function(){jQuery(this).fancybox({titleShow:!1,overlayOpacity:"0.8",href:this.href.replace(new RegExp("watch\\?v=","i"),"v/"),type:"swf",swf:{wmode:"transparent",allowfullscreen:"true"}})}),jQuery("#view a").fancybox(),jQuery(".thumb-grid a").fancybox()});
