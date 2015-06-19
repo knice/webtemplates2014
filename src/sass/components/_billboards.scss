@@ -11,35 +11,53 @@ Slide Styles
 
 // Left and right column layouts
 @mixin layout-left-right {
+	
 	@include media ($mobile) {
 		max-width: 100%;
 		text-align: left;
 		padding: 1.5em 1em;
 	}
-
 	@include media ($tablet) {
 		width: 100%;
 		max-width: 475px;
 		margin: 3% 0 3% 0;
 	}
+
 }
 
 // Top and bottom full-width layouts
 @mixin layout-horizontal {
+	display: table-cell;
+	padding: 0.7rem 0;
+	float: none;
+	// Defaults for title and teaser
+  .slide-title,
+  .slide-teaser {
+  	border: 1px solid red;
+    display: table-cell;
+    vertical-align: top;
+    margin: 0;
+    padding: 0.3rem 0.6rem;
+    float:none;
+  }	
+	// Small screen settings
 	@include media ($mobile) {
-		padding:1.5em 1em;
+		padding: 1.5em 1em;
 	}
+
+	// Medium screen settings
 	@include media ($tablet) {
 		height: 35%;
 		margin: 0;
 		width:100%;
 		padding: 0;
 	}
+
 }
 
 @mixin slider-position {
 	@include media ($mobile) {
-		position: none;
+		position: relative;
 	}
 	@include media ($tablet) {
 		position: absolute;
@@ -94,14 +112,13 @@ Slide Styles
 
 @mixin horizontal-title {
 	.slide-title {
-		  display: block;
-		  margin: 0;
-		  width: 40%;
-		  line-height: .9em;
-		  text-align: right;
-		  float: left;
-	  
-	  @include media($mobile) {
+		width: 40%;
+		line-height: 1;
+		text-align: right;
+		padding: 0;
+
+		// Small screen settings
+		@include media($mobile) {
 			width: 100%;
 			max-width:803px;
 			text-align: left;
@@ -109,21 +126,24 @@ Slide Styles
 			padding:0;
 			font-size: 2.5em;
 		}
-	  @include media($tablet) {
-	  		font-size: 3em;
-	  		padding: .20em .5em .20em;
-	  }
-
-	}	
+		
+		// Medium screen settings
+		@include media($tablet) {
+				font-size: 3em;
+				padding: 0.7rem;
+		}
+	
+	}
 }
 
 
 @mixin horizontal-teaser {
 	.slide-teaser {
-	  display: block;
-	  line-height:1.25em;
-	  width: 60%;
-	  float: left;
+	  line-height: 1;
+	  width: 65%;
+	  float: none;
+	  margin: 0;
+
 	  @include media($mobile) {
 			width: 100%;
 			max-width:803px;
@@ -133,32 +153,43 @@ Slide Styles
 			margin: 0;
 			font-size: 1.25em;
 		}
-	  @include media($tablet)  {
+	  
+	  @include media($tablet) {
 		  	font-size: 1.5em;
-		  	padding: .80em 0 .20em;
+		  	padding: 0;
 	  }
+	
 	}
 }
 
-//End Top and Bottom
-
-#slides {
-	// z-index:1;
-}
 
 .slide {
+
+	// Setup for a single slide
 	position:relative;
 	max-width: 100%;
 	margin-bottom: 5px;
 	font-size: $font-size-small;
 	max-height:362px;
-	border-radius: $border-radius-base;
 	overflow:hidden;
 	
-	img{
+  .slide-title {
+    font-size: 1.4rem;
+    line-height: 1.1;
+    margin-bottom: 0.4rem;
+  }
+  
+  .slide-teaser {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+  }
+  
+  img{
 		width:100%;
 		height: auto;
-		z-index:1;
+		z-index: 1;
 	}
 	
 }
@@ -168,9 +199,9 @@ Slide Styles
 	// layout classes aren't added, these rules take precedence.
 	width: 100%;
 	bottom: 0;
-	z-index:1;
+	z-index: 1;
 	background-color:rgba($ucsc-blue, 0.80);
-	color:$sand-light;
+	color: $sand-light;
 	padding: 1em 1.2em 0.6em;
 	@include slider-position;
 	.slide-title {
@@ -203,7 +234,7 @@ Slide Styles
 		@include billboard-teaser;
 		@include layout-left-right;
 		text-align: right;
-		left:0;
+		left: 0;
 	}
 	
 	&.layout-right{
@@ -215,11 +246,11 @@ Slide Styles
 	}
 	
 	&.layout-top {   	
-	   	@include layout-horizontal;
-	   	@include horizontal-title;
-	   	@include horizontal-teaser;
-	   	@include slider-clearfix;
-	   	top:5%;
+		@include layout-horizontal;
+		@include horizontal-title;
+		@include horizontal-teaser;
+		@include slider-clearfix;
+		top:5%;
   }
 
 	&.layout-bottom{
